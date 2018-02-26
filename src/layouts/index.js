@@ -1,31 +1,33 @@
 import React from "react";
 import glamorous from "glamorous";
-import { css } from "glamor";
 import Link from "gatsby-link";
 import { rhythm } from "../utils/typography";
-const { Div, H3 } = glamorous
-const linkStyle = css({ float: `right` });
+import styles from "../styles/layout-index.module.css"
+import logo from '../assets/logo.png'
 export default ({ children, data }) => 
-  <Div
-    margin={`0 auto`}
-    maxWidth={1000}
-    padding={0}
-    paddingTop={rhythm(1)}
-  >
-    <Link to={`/`}>
-      <H3
-        marginBottom={rhythm(2)}
-        display={`inline-block`}
-        fontStyle={`normal`}
-      >
-        {data.site.siteMetadata.title}
-      </H3>
-    </Link>
-    <Link className={linkStyle} to={`/about/`}>
-      About
-    </Link>
-    {children()}
-  </Div>
+<div>
+  <div className={styles.header}>
+    <div>
+      <Link to={`/`}>
+        <img
+          src={logo}
+          alt={`Jayant Tiwari`}
+          className={styles.logo}
+        />
+      </Link>
+    </div>
+    <div>
+      <Link to={`/about/`}>
+        About
+      </Link>
+    </div>
+  </div>
+  <div className={styles.page}>
+    <div>
+      {children()}
+    </div>
+  </div>
+</div>
 export const query = graphql`
   query LayoutQuery {
     site {

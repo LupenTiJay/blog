@@ -1,6 +1,8 @@
 module.exports = {
     siteMetadata: {
-      title: `Welcome to my first site`,
+      title: `Jayant's Blog`,
+      blogMain: `Welcome to my blog where I share interesting experiences working with different technologies and occasionally about food`,
+      blogDisclaimer: `This site is written and maintained my me, if you have any questions shoot me an email`
     },
     plugins: [
         {
