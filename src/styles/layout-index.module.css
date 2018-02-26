@@ -1,0 +1,30 @@
+.page {
+    background-color: #FAFBFC;
+    padding-left: 17rem;
+    padding-right: 17rem;
+    padding-bottom: 100%;
+    height: 100%;
+    width: 100%;
+}
+.header {
+    background-color: #FAFBFC;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.link {
+border-bottom: 3rem red dotted;
+font-size: 10rem;
+line-height: 1.5;
+text-decoration: none
+}
+.logo {
+    width: 17rem;
+    margin: -3rem;
+    height: 7rem;
+}

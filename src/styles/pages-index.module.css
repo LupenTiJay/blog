@@ -1,0 +1,10 @@
+.blogCard {
+    background-color: white;
+    padding: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem; 
+    border:2px solid #DBE4ED;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+} 
