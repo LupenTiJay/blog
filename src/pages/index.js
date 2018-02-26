@@ -3,24 +3,7 @@ import Link from "gatsby-link";
 import BioMain from "../components/bio-main"
 import { rhythm } from "../utils/typography";
 import styles from "../styles/pages-index.module.css"
-const getBlogCard = (node) => {
-return (
-  <div key={node.id} className={styles.blogCard}>
-    <h3 marginBottom={rhythm(1 / 4)}>
-      {node.frontmatter.title}{" "}
-      <span color="#BBB">— {node.frontmatter.date}</span>
-    </h3>
-    <p>
-      {node.excerpt}
-    </p>
-    <Link
-    to={node.fields.slug}>
-    Read more
-    </Link>
-
-  </div>
-)
-}
+import getBlogCard from "../components/blog-card"
 export default ({ data }) => {
   return (
     <div>

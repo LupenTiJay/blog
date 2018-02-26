@@ -8,3 +8,18 @@
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
 } 
+
+.title {
+    font-size: 3rem;
+    color: #1C3852;
+}
+
+.excerpt {
+    font-size : 1rem;
+    color: #3F566B;
+}
+.date {
+    font-size: 0.25rem;
+    color: #8FA1B2;
+    margin-bottom: 0;
+}

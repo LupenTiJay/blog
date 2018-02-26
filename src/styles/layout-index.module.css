@@ -28,3 +28,27 @@ text-decoration: none
     margin: -3rem;
     height: 7rem;
 }
+
+/* unvisited link */
+a:link {
+    color: #4EB783;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color:#4EB783;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #4EB783;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color:#4EB783;
+    text-decoration: none;
+}

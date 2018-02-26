@@ -23,9 +23,13 @@ class Bio extends React.Component {
             className={styles.img}
           />
         </div>
-        <p>
-          Written by <strong>Jayant Tiwari</strong> currently an undergrad student
-        </p>
+        <div>
+          <p className={styles.body}>
+            My name is <strong>Jayant Tiwari </strong> 
+            This blog is written and maintained by me
+            I'm entering my fourth year in Computer Engineering at University Of Waterloo 
+          </p>
+        </div>
       </div>
     )
   }
