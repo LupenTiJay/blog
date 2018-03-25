@@ -1,0 +1,25 @@
+.imgCrop {
+    width: 135px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+img {
+    display: inline;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.body {
+    font-size : 1rem;
+    color: #3F566B;
+    padding-left: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
