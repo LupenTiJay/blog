@@ -16,7 +16,8 @@ export default ({ data }) =>
       <div className={styles.page}>
         <Container>
           <Row>
-              <Col xs='100%'>
+            <div className={styles.col}>
+            <Col lg='8' xs='10' md='10'>
                 <img
                   src={profilePic}
                   alt={`Jayant Tiwari`}
@@ -48,6 +49,7 @@ export default ({ data }) =>
                     </div>
                   </div>
               </Col>
+            </div>
         </Row>
       </Container>
     </div>
