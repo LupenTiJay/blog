@@ -29,8 +29,7 @@ const draftIcon = require('../assets/draftIcon.svg')
             {node.excerpt}
         </p>
         <Link
-            to={node.fields.slug}>
-            <Button outline color="success">Read more</Button>    
+            to={node.fields.slug}>Read more → 
         </Link>
         
 

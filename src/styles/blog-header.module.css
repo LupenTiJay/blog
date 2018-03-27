@@ -4,7 +4,7 @@
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-size: 1rem;
+    font-size: 2rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,12 @@
     justify-content: space-between;
 }
 .logo {
-    width: auto;
+    width: 15rem;
+    height: 15rem;
+    margin-top: -4rem;
+    margin-left: -3rem;
+    margin-bottom:-3rem;
+    
 }
 .logoContainer {
     margin-bottom: -5rem;
@@ -32,4 +37,10 @@
 .blogHeaderLogoContainer {
     margin-top: -5rem;
     margin-bottom: -5rem;
+}
+
+.col {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }

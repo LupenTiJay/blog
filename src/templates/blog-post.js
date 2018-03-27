@@ -5,6 +5,8 @@ import styles from "../styles/blog-post.module.css"
 import BlogArticleHeader from "../components/blog-article-header.js"
 import getTagBadge from "../components/tags.js"
 import { Container, Row, Col } from "reactstrap";
+import { InputGroup, InputGroupAddon, Button, Input } from 'reactstrap'
+import $ from 'jquery'
 export default ({ data }) => {
   if (data === undefined) return null
   console.log(data)
@@ -26,14 +28,40 @@ export default ({ data }) => {
             <h1 className={styles.title}>{post.frontmatter.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             <Bio/>
+            <InputGroup>
+              <Input id="feedback" type="textarea" placeholder="Feedback is appreciated!" bsSize='lg' />
+            </InputGroup>
+            <div>
+            <Button color="success" onClick={feedbackWebhook}>Send</Button>
+            </div>
           </Col>
         </div>
+        
       </Row>
       </Container>
     </div>
   );
 };
+const feedbackWebhook =  (yolo) => {
+  // do webhook
+  console.log(document.getElementById('feedback').value)
+  const url = 'https://hooks.slack.com/services/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'
+  const text = document.getElementById('feedback').value
 
+  $.ajax({
+    data: JSON.stringify({
+        "text": text
+    }),
+    dataType: 'json',
+    processData: false,
+    type: 'POST',
+    url: url
+  });
+
+  return (
+    <div> test </div>
+  )
+}
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
