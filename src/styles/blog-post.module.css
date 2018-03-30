@@ -19,3 +19,15 @@
     display: flex;
     justify-content: center;
 }
+
+.feedbackButton {
+    float: right;
+}
+
+.sumbit {
+    float: left;
+}
+
+.feedbackGroup {
+    margin-top: 3rem;
+}

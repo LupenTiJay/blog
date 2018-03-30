@@ -14,7 +14,8 @@ class Bio extends React.Component {
         style={{
           display: 'flex',
           justifyContent: 'space-evenly',
-          padding: '1rem'
+          padding: '0rem',
+          marginTop: ' 6rem'
         }}
       >
         <img

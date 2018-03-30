@@ -6,6 +6,7 @@ import 'typeface-merriweather'
 import styles from '../styles/bio-main.module.css'
 import profilePic from '../assets/profile.png'
 import { rhythm } from '../utils/typography'
+import Link from "gatsby-link";
 
 class Bio extends React.Component {
   render() {
@@ -22,8 +23,12 @@ class Bio extends React.Component {
           <p className={styles.body}>
             My name is <strong>Jayant </strong> 
             This blog is written and maintained by me
-            I'm entering my fourth year in Computer Engineering at University Of Waterloo 
+            I'm entering my fourth year in Computer Engineering at University Of Waterloo
+
           </p>
+          <Link to={`/about/`} className={styles.body}>
+                 About →
+            </Link>
         </div>
       </div>
     )

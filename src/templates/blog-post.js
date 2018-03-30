@@ -27,13 +27,16 @@ export default ({ data }) => {
             </div>
             <h1 className={styles.title}>{post.frontmatter.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <Bio/>
-            <InputGroup>
+            
+            <InputGroup className={styles.feedbackGroup}>
               <Input id="feedback" type="textarea" placeholder="Feedback is appreciated!" bsSize='lg' />
             </InputGroup>
-            <div>
+            <div id='response' className={styles.submit}>
+            </div>
+            <div className={styles.feedbackButton}>
             <Button color="success" onClick={feedbackWebhook}>Send</Button>
             </div>
+            <Bio/>
           </Col>
         </div>
         
@@ -45,6 +48,7 @@ export default ({ data }) => {
 const feedbackWebhook =  (yolo) => {
   // do webhook
   console.log(document.getElementById('feedback').value)
+  document.getElementById("response").innerHTML="Thanks!"; 
   const url = 'https://hooks.slack.com/services/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'
   const text = document.getElementById('feedback').value
 
