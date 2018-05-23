@@ -9,7 +9,7 @@ description: "Description"
 tags: ["Engineering", "Draft"]
 ---
 
-Origins of GraphQL
+<!-- Origins of GraphQL
 
 # Why do we need it
 
@@ -25,4 +25,4 @@ Example
 
 # Conclusion
 
-Thats it!
+Thats it! -->
