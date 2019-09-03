@@ -12,6 +12,15 @@ img {
     border-radius: 50%;
 }
 
+.imgContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.bioContainer {
+    display: flex;
+    justify-content: center;
+}
 .body {
     font-size : 1rem;
     color: #3F566B;
@@ -19,7 +28,7 @@ img {
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     margin-bottom: 1rem;
 }
