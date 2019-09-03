@@ -3405,6 +3405,11 @@ gatsby-plugin-glamor@^1.6.13:
     babel-runtime "^6.26.0"
     glamor "^2.20.29"
 
+gatsby-plugin-just-comments@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-just-comments/-/gatsby-plugin-just-comments-0.2.3.tgz#7e62ce9911583c2a1b30664531ab782836e0dea3"
+  integrity sha512-cOizMyCzo3dukRMn1+LWePcRwIkqBvnlTB53FC3VXQqpDaIQVcRzPvhzdNukiZPYg1hrm+MZLreM/N91OStlPQ==
+
 gatsby-plugin-page-creator@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-1.0.1.tgz#6bad33a7f46cb5b87dbdaacc3c1bbd81ac63bc20"

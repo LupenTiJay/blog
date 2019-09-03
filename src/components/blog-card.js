@@ -14,6 +14,9 @@ const draftIcon = require('../assets/draftIcon.svg')
         tags.push(getTagBadge(node.frontmatter.tags[tag]))
     }
     return (
+        // <Link  
+        //     to={node.fields.slug} 
+        //     activeStyle={{ all: "unset" }}>
         <div key={node.id} className={`${styles.grow} ${styles.blogCard}`}>
         {tags}
         <div>
@@ -34,6 +37,7 @@ const draftIcon = require('../assets/draftIcon.svg')
         
 
     </div>
+    // </Link>
     )
 }
 

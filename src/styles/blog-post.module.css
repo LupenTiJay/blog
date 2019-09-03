@@ -9,6 +9,9 @@
     text-align: center;
 }
 
+.htmlBody {
+    line-height: 1.9
+}
 .col {
     display: flex;
     justify-content: space-evenly;

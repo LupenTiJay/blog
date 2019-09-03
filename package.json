@@ -14,6 +14,7 @@
     "gatsby-cli": "^1.1.58",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-glamor": "^1.6.13",
+    "gatsby-plugin-just-comments": "^0.2.3",
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-remark-prismjs": "^1.2.24",
     "gatsby-source-filesystem": "^1.5.39",
