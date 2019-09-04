@@ -28,9 +28,7 @@ export default ({ data }) => {
             </div>
             <h1 className={styles.title}>{post.frontmatter.title}</h1>
             <div className={styles.htmlBody} dangerouslySetInnerHTML={{ __html: post.html }} />
-            <JustComments
-              apikey="32c0c0f3-21e2-45c6-9694-af92a38a8b2a"
-            />
+            <JustComments apikey="32c0c0f3-21e2-45c6-9694-af92a38a8b2a"/>
             <Bio/>
           </Col>
         </div>
