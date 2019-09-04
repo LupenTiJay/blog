@@ -1,4 +1,4 @@
-module.exports = {
+module.exports =  {
     siteMetadata: {
       title: `Jayant's Blog`,
       blogMain: `Welcome to my blog where I share interesting experiences working with different technologies and occasionally about food`,

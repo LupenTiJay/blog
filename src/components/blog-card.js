@@ -41,4 +41,4 @@ const draftIcon = require('../assets/draftIcon.svg')
     )
 }
 
-module.exports = getBlogCard;
+export default getBlogCard;

@@ -25,4 +25,4 @@ const BlogHeader = () => {
         </div>
     )
 }
-module.exports = BlogHeader;
+export default BlogHeader;

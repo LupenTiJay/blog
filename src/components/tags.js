@@ -30,4 +30,4 @@ const getTagBadge = (tag) => {
 
 }
 
-module.exports = getTagBadge;
+export default getTagBadge;
