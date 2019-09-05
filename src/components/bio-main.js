@@ -14,7 +14,7 @@ class Bio extends React.Component {
       <div
         className={styles.container}
       >
-        <div
+        {/* <div
           className={styles.imgContainer}  
         > 
           <img
@@ -22,7 +22,7 @@ class Bio extends React.Component {
             alt={`Jayant Tiwari`}
             className={styles.img}
           />
-        </div>
+        </div> */}
         <div
           className={styles.bioContainer}
         >

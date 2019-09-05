@@ -5,6 +5,7 @@ import styles from "../styles/pages-index.module.css"
 import { Badge } from 'react-bootstrap';
 import { Button } from "reactstrap";
 import getTagBadge from './tags.js'
+import {navigate} from 'gatsby'
 const _ = require('lodash')
 const draftIcon = require('../assets/draftIcon.svg')
     const getBlogCard = (node) => {
@@ -13,22 +14,23 @@ const draftIcon = require('../assets/draftIcon.svg')
     for(var tag in node.frontmatter.tags) {
         tags.push(getTagBadge(node.frontmatter.tags[tag]))
     }
+    const onClick = (e) => {
+        navigate(node.fields.slug)
+    }
     return (
         // <Link  
         //     to={node.fields.slug} 
-        //     activeStyle={{ all: "unset" }}>
+        //     partiallyActive={true}>
         <div key={node.id} className={`${styles.grow} ${styles.blogCard}`}>
         {tags}
-        <div>
-            </div>
-        <h3 className={styles.title}>
+        <h3 className={styles.title}  onClick={onClick}>
             {node.frontmatter.title}
         </h3>
 
         <div className={styles.date}>
             {node.frontmatter.date}
         </div>
-        <p className={styles.excerpt}>
+        <p className={styles.excerpt}  onClick={onClick}>
             {node.excerpt}
         </p>
         <Link

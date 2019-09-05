@@ -3,7 +3,7 @@ import AboutHeader from "../components/about-header"
 import styles from "../styles/about-me.module.css"
 import profilePic from '../assets/profile.png'
 import Link from "gatsby-link";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 var { SocialIcon } = require('react-social-icons');
 const urls = {
   github :'https://github.com/LupenTiJay',

@@ -5,15 +5,16 @@ import { rhythm } from "../utils/typography";
 import styles from "../styles/pages-index.module.css"
 import getBlogCard from "../components/blog-card"
 import BlogHeader from "../components/blog-header"
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "react-bootstrap";
 export default ({ data }) => {
   return (
 <div className={styles.page}>
-  <BlogHeader/>
+  
     <Container>
       <Row>
         <div className={styles.col}>
           <Col xs='%100' sm='80%' md='10'>
+              <BlogHeader/>
               <BioMain />
               <h4>
                 Number of Posts: {data.allMarkdownRemark.totalCount}

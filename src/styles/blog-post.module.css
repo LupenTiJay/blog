@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.comment {
+    display: flex;
+    justify-content: center;
+}
 .title {
     text-align: center;
 }

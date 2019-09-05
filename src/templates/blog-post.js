@@ -4,7 +4,7 @@ import Bio from "../components/bio.js"
 import styles from "../styles/blog-post.module.css"
 import BlogArticleHeader from "../components/blog-article-header.js"
 import getTagBadge from "../components/tags.js"
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { InputGroup, InputGroupAddon, Button, Input } from 'reactstrap'
 import JustComments from 'gatsby-plugin-just-comments';
 import $ from 'jquery'
@@ -28,11 +28,15 @@ export default ({ data }) => {
             </div>
             <h1 className={styles.title}>{post.frontmatter.title}</h1>
             <div className={styles.htmlBody} dangerouslySetInnerHTML={{ __html: post.html }} />
-            <JustComments apikey="32c0c0f3-21e2-45c6-9694-af92a38a8b2a"/>
             <Bio/>
           </Col>
         </div>
         
+      </Row>
+      <Row>
+        <Col className={styles.comment}>
+          <JustComments apikey="32c0c0f3-21e2-45c6-9694-af92a38a8b2a"/>
+        </Col>
       </Row>
       </Container>
     </div>

@@ -1,13 +1,9 @@
 .header {
     background-color: #FAFBFC;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
     font-size: 2rem;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .articleHeader {
