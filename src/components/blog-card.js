@@ -33,9 +33,9 @@ const draftIcon = require('../assets/draftIcon.svg')
         <p className={styles.excerpt}  onClick={onClick}>
             {node.excerpt}
         </p>
-        <Link
+        {/* <Link
             to={node.fields.slug}>Read more → 
-        </Link>
+        </Link> */}
         
 
     </div>

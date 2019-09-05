@@ -15,6 +15,11 @@
     font-size: 3rem;
     color: #1C3852;
     cursor: pointer;
+
+}
+
+.title:hover {
+    color: #52B07F
 }
 
 .excerpt {
