@@ -9,7 +9,7 @@
 img {
     display: inline;
     height: 6rem;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .imgContainer {

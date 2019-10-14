@@ -14,12 +14,14 @@
 }
 
 .htmlBody {
-    line-height: 1.9
+    line-height: 2.3
 }
 .col {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .tagContainer {

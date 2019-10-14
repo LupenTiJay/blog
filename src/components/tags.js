@@ -4,7 +4,9 @@ import styles from "../styles/pages-index.module.css"
 const _ = require('lodash');
 const tagColor =  {
     Engineering:{background:'#FAEFF5', color:'#E168A5'},
-    Draft: {background: '#AEF0FC', color:'#47E2FF'}
+    Python: {background:'#FFEFBF', color:'#FFAB68'},
+    Draft: {background: '#AEF0FC', color:'#47E2FF'},
+    LifeStyle: {background: '#DFFFE7', color:'#7CFF7E'},
 }
 const getTagBadge = (tag) => {
     if (tagColor[tag] === undefined) return

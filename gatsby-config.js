@@ -5,25 +5,31 @@ module.exports =  {
       blogDisclaimer: `This site is written and maintained my me, if you have any questions shoot me an email`
     },
     plugins: [
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-              name: `src`,
-              path: `${__dirname}/src/`,
-            },
-        },
+      {
+          resolve: `gatsby-source-filesystem`,
+          options: {
+            name: `src`,
+            path: `${__dirname}/src/`,
+          },
+      },
       `gatsby-plugin-glamor`,
-      `gatsby-transformer-remark`,
       {
         resolve: `gatsby-plugin-typography`,
         options: {
           pathToConfigModule: `src/utils/typography`,
         },
       },
+      'gatsby-plugin-sharp',
       {
         resolve: `gatsby-transformer-remark`,
         options: {
           plugins: [
+            {
+              resolve: 'gatsby-remark-images',
+              options: {
+                maxWidth: 970,
+              },
+            },
             {
               resolve: `gatsby-remark-prismjs`,
               options: {

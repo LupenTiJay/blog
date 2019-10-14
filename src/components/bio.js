@@ -13,17 +13,21 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
-          justifyContent: 'space-evenly',
+          justifyContent: 'center',
           padding: '0rem',
           marginTop: ' 6rem'
         }}
       >
         <img
           src={profilePic}
+          style={{borderRadius:'50%'}}
           alt={`Jayant Tiwari`}
         />
-        <p>
-          Written by <strong>Jayant Tiwari</strong> currently an undergrad student
+        <p style={{
+          textAlign:'left',
+          lineHeight: '6'
+        }}>
+          Written by <strong>Jayant Tiwari</strong> currently an SE at Alexa@Amazon
         </p>
       </div>
     )
