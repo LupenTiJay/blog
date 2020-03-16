@@ -30,13 +30,13 @@ export default ({ data }) =>
                     I'm currently a 4th year student in Computer Engineering. Heavily involved with technology. <br/>
                     Playing basketball, making music and writing cool software are my hobbies
                   </p>
-                  <div className={styles.body}>
+                  {/* <div className={styles.body}>
                     <a
                     href={"https://drive.google.com/file/d/1u7WrGUqVTdOjM2avkbnUsFWRhBxNfStw/view?usp=sharing"}
                     className={styles.body}>
                     <Button outline color="success">Resume</Button>    
                     </a>
-                  </div>
+                  </div> */}
                   <h1 className={styles.title}>
                     Contact me through
                   </h1>
