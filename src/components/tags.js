@@ -7,6 +7,7 @@ const tagColor =  {
     Python: {background:'#FFEFBF', color:'#FFAB68'},
     Draft: {background: '#AEF0FC', color:'#47E2FF'},
     LifeStyle: {background: '#DFFFE7', color:'#7CFF7E'},
+    Neural: {background: '#ffd1ad', color: '#ff8b1f'}
 }
 const getTagBadge = (tag) => {
     if (tagColor[tag] === undefined) return
