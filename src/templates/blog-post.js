@@ -7,8 +7,12 @@ import getTagBadge from "../components/tags.js"
 import { Container, Row, Col } from "react-bootstrap";
 import { InputGroup, InputGroupAddon, Button, Input } from 'reactstrap'
 import JustComments from 'gatsby-plugin-just-comments';
+
 import $ from 'jquery'
 export default ({ data }) => {
+  require(`katex/dist/katex.min.css`)
+  // require("prismjs/themes/prism-solarizedlight.css")
+  require("prismjs/themes/prism-twilight.css")
   if (data === undefined) return null
   console.log(data)
   const post = data.markdownRemark;
