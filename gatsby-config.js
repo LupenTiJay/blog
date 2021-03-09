@@ -91,6 +91,13 @@ module.exports =  {
                 theme: 'neutral', // could also be dark, forest, or neutral,
               }
             },
+            `gatsby-remark-katex`,
+            {
+                resolve: `gatsby-remark-images`,
+                options: {
+                    maxWidth: 650,
+                },
+            },
           ],
         },
       },     
